@@ -1,9 +1,9 @@
 <?php
-$servername = "shinkansen.proxy.rlwy.net";
+$servername = "ballast.proxy.rlwy.net";
 $username = "root";
-$password = "vtEYOwzOZYCNwFqkaEqfEowwYWKKlmUr";
+$password = "ObWqJELmdiJJHRehCnAqIXbgdoROebNm";
 $dbname = "railway";
-$port = 17416;
+$port = 29077;
 
 $conn = new mysqli($servername, $username, $password, $dbname, $port);
 
