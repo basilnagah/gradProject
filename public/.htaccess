@@ -1,0 +1,12 @@
+# public/.htaccess
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirect all requests to index.php if file or folder doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# Deny access to sensitive folders
+RewriteRule ^(auth|store|products|connection|vendor)/ - [F,L]
